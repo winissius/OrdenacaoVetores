@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
-public class Merge {
-    public static void mergesort(int[] v)
+public class Selection {
+    public static void selectionSort(int[] v)
     {
         for(int i = 0; i < v.length - 1; i++)
         {
