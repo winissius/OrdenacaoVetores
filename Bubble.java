@@ -1,6 +1,6 @@
 import java.util.Arrays; // importacao de biblioteca para exibicao do array
 public class Bubble {
-    public static void bubblesort(int[] v) // static void para poder chamar sem instanciar o objeto
+    public static void bubbleSort(int[] v) // static void para poder chamar sem instanciar o objeto
     {
         System.out.println("Bubble sort");
         for (int j = v.length-1; j > 0; j--) // garante a passagem ate a completa ordenacao
