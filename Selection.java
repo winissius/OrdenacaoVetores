@@ -3,6 +3,7 @@ import java.util.Arrays;
 public class Selection {
     public static void selectionSort(int[] v)
     {
+        System.out.println(Arrays.toString(v)); // exibe o vetor antes da alteracao
         for(int i = 0; i < v.length - 1; i++)
         {
             int smallPosition = i; // guarda a posicao do menor elemento
@@ -12,15 +13,15 @@ public class Selection {
                 {
                     smallPosition = j; // guarda a posicao do menor
                 }
-                change(v, i, smallPosition);
-                System.out.println(Arrays.toString(v));
             }
+            change(v, i, smallPosition);
+            System.out.println(Arrays.toString(v));
         }
     }
 
     public static void change(int [] v, int i, int j) // metodo de troca de posicoes
     {
-        int aux = v[i];
+        int aux = v[i]; // auxiliar para troca
         v[i] = v[j];
         v[j] = aux;
     }
