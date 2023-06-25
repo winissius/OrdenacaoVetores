@@ -1,11 +1,11 @@
-import java.util.Arrays;
+import java.util.Arrays; // biblioteca para exibir o vetor de forma mais facil
 
 public class BubbleRecursive {
     public static void bubbleSort(int[] v) // static void para poder chamar sem instanciar o objeto
     {
         for (int i = 0; i < v.length - 1; i++) // faz a passagem dos elementos
         {
-            System.out.println(Arrays.toString(v));
+            System.out.println(Arrays.toString(v)); // exibicao do vetor
             if (v[i] > v[i+1]) // analise do elemento com o proximo
             {
                 change(v, i); // metodo de troca de posicoes

@@ -1,4 +1,4 @@
-import java.util.Arrays;
+import java.util.Arrays; // biblioteca para exibir o vetor de forma mais facil
 
 public class Selection {
     public static void selectionSort(int[] v)
